@@ -1,4 +1,3 @@
-import math
 import paddle
 from paddle import nn
 

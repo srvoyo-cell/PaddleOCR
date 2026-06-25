@@ -23,7 +23,6 @@ from __future__ import print_function
 import cv2
 import numpy as np
 import paddle
-import paddle.nn as nn
 import paddle.nn.functional as F
 from lanms import merge_quadrangle_n9 as la_nms
 

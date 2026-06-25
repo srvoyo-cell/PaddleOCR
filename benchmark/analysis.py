@@ -143,7 +143,7 @@ class TimeAnalyzer(object):
                             )
                         ]
                     self.records.append(float(result))
-                except Exception as exc:
+                except Exception:
                     print(
                         "line is: {}; separator={}; position={}".format(
                             line, self.separator, self.position

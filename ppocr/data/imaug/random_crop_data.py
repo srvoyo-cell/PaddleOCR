@@ -180,7 +180,7 @@ def clip_poly_to_rect(poly, x, y, w, h):
             return None
 
         return coords
-    except Exception as e:
+    except Exception:
         return None
 
 

@@ -19,8 +19,6 @@ https://github.com/lucidrains/x-transformers/blob/main/x_transformers/autoregres
 
 import paddle
 import paddle.nn as nn
-import paddle.nn.functional as F
-import numpy as np
 
 
 class LaTeXOCRLoss(nn.Layer):

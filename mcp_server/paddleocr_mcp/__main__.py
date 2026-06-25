@@ -174,7 +174,7 @@ def _validate_args(args: argparse.Namespace) -> None:
                 "Error: The self-hosted service base URL is required.", file=sys.stderr
             )
             print(
-                f"Please set `--self-hosted-base-url` or the environment variable "
+                "Please set `--self-hosted-base-url` or the environment variable "
                 "`PADDLEOCR_MCP_SELF_HOSTED_BASE_URL`.",
                 file=sys.stderr,
             )

@@ -26,8 +26,6 @@ import datetime
 import paddle
 import paddle.distributed as dist
 from tqdm import tqdm
-import cv2
-import numpy as np
 import copy
 from argparse import ArgumentParser, RawDescriptionHelpFormatter
 
@@ -37,7 +35,6 @@ from ppocr.utils.utility import print_dict, AverageMeter
 from ppocr.utils.logging import get_logger
 from ppocr.utils.loggers import WandbLogger, Loggers
 from ppocr.utils import profiler
-from ppocr.data import build_dataloader
 from ppocr.utils.export_model import export
 
 
@@ -173,7 +170,7 @@ def check_device(
             )
             sys.exit(1)
 
-    except Exception as e:
+    except Exception:
         pass
 
 

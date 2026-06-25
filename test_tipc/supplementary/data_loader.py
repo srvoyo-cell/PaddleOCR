@@ -1,9 +1,8 @@
-import numpy as np
 from paddle.vision.datasets import Cifar100
 from paddle.vision.transforms import Normalize
 import signal
 import os
-from paddle.io import Dataset, DataLoader, DistributedBatchSampler
+from paddle.io import DataLoader, DistributedBatchSampler
 
 
 def term_mp(sig_num, frame):

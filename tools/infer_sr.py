@@ -20,7 +20,6 @@ import numpy as np
 
 import os
 import sys
-import json
 from PIL import Image
 import cv2
 

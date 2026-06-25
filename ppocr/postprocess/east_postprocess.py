@@ -21,9 +21,7 @@ from .locality_aware_nms import nms_locality
 import cv2
 import paddle
 
-import os
 from ppocr.utils.utility import check_install
-import sys
 
 
 class EASTPostProcess(object):

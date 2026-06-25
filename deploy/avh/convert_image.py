@@ -17,11 +17,9 @@
 
 import os
 import pathlib
-import re
 import sys
 import cv2
 import math
-from PIL import Image
 import numpy as np
 
 

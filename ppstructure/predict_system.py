@@ -23,7 +23,6 @@ sys.path.insert(0, os.path.abspath(os.path.join(__dir__, "../")))
 os.environ["FLAGS_allocator_strategy"] = "auto_growth"
 import cv2
 import json
-import numpy as np
 import time
 import logging
 from copy import deepcopy

@@ -1,6 +1,4 @@
-import paddleslim
 import paddle
-import numpy as np
 
 from paddleslim.dygraph import FPGMFilterPruner
 

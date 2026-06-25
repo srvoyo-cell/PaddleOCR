@@ -25,12 +25,10 @@ from ._core import (
     unwrap_api_response,
 )
 from .errors import (
-    NetworkError,
-    RequestTimeoutError,
     ResponseFormatError,
     ResultParseError,
 )
-from ._http import API_PATH, DEFAULT_BASE_URL
+from ._http import API_PATH
 
 
 class AsyncHTTPClient:

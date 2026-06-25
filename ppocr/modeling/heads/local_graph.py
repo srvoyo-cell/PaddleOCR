@@ -22,7 +22,6 @@ from __future__ import print_function
 
 import numpy as np
 import paddle
-import paddle.nn as nn
 from ppocr.ext_op import RoIAlignRotated
 
 

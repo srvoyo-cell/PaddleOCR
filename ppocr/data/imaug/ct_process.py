@@ -12,15 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import os
 import cv2
-import paddle
 import random
 import pyclipper
 import numpy as np
 from PIL import Image
 
-import paddle.vision.transforms as transforms
 
 from ppocr.utils.utility import check_install
 
@@ -94,7 +91,7 @@ class MakeShrink:
                     continue
 
                 shrinked_bboxes.append(shrinked_bbox)
-            except Exception as e:
+            except Exception:
                 shrinked_bboxes.append(bbox)
 
         return shrinked_bboxes

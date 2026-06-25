@@ -4,7 +4,6 @@
 
 import numpy as np
 import cv2
-import os
 import random
 from tqdm import tqdm
 

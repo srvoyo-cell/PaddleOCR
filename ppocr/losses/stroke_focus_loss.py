@@ -15,12 +15,6 @@
 This code is refer from:
 https://github.com/FudanVI/FudanOCR/blob/main/text-gestalt/loss/stroke_focus_loss.py
 """
-import cv2
-import sys
-import time
-import string
-import random
-import numpy as np
 import paddle.nn as nn
 import paddle
 

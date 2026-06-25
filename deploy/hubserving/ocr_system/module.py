@@ -23,9 +23,8 @@ sys.path.insert(0, ".")
 import copy
 
 import time
-import paddlehub
 from paddlehub.common.logger import logger
-from paddlehub.module.module import moduleinfo, runnable, serving
+from paddlehub.module.module import moduleinfo, serving
 import cv2
 import numpy as np
 import paddlehub as hub

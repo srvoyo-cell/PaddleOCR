@@ -13,14 +13,12 @@
 # limitations under the License.
 
 import os
-from copy import deepcopy
 
 from docx import Document
 from docx import shared
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.section import WD_SECTION
 from docx.oxml.ns import qn
-from docx.enum.table import WD_TABLE_ALIGNMENT
 
 from ppstructure.recovery.table_process import HtmlToDocx
 

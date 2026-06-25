@@ -18,7 +18,7 @@ import os
 import paddle
 import paddle.nn as nn
 from paddle import ParamAttr
-from paddle.nn import AdaptiveAvgPool2D, BatchNorm, Conv2D, Dropout, Linear
+from paddle.nn import AdaptiveAvgPool2D, BatchNorm, Conv2D
 from paddle.regularizer import L2Decay
 from paddle.nn.initializer import KaimingNormal
 from paddle.utils.download import get_path_from_url

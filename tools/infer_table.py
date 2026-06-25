@@ -29,7 +29,6 @@ sys.path.insert(0, os.path.abspath(os.path.join(__dir__, "..")))
 os.environ["FLAGS_allocator_strategy"] = "auto_growth"
 
 import paddle
-from paddle.jit import to_static
 
 from ppocr.data import create_operators, transform
 from ppocr.modeling.architectures import build_model

@@ -16,7 +16,6 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import os
 from paddle import nn
 
 from paddlenlp.transformers import (
@@ -30,7 +29,6 @@ from paddlenlp.transformers import (
     LayoutLMv2ForTokenClassification,
     LayoutLMv2ForRelationExtraction,
 )
-from paddlenlp.transformers import AutoModel
 
 __all__ = ["LayoutXLMForSer", "LayoutLMForSer"]
 

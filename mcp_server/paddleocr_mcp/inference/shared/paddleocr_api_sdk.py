@@ -181,7 +181,3 @@ ResponseFormatError = _SDK.ResponseFormatError
 ResultParseError = _SDK.ResultParseError
 ServiceUnavailableError = _SDK.ServiceUnavailableError
 
-from paddleocr._api_client._core import (  # noqa: E402
-    resolve_document_model,
-    resolve_ocr_model,
-)

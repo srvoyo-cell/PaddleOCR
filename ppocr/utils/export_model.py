@@ -16,14 +16,12 @@ import os
 import yaml
 import json
 import copy
-import shutil
 import paddle
 import paddle.nn as nn
 from paddle.jit import to_static
 
 from collections import OrderedDict
 from packaging import version
-from argparse import ArgumentParser, RawDescriptionHelpFormatter
 from ppocr.modeling.architectures import build_model
 from ppocr.postprocess import build_post_process
 from ppocr.utils.save_load import load_model

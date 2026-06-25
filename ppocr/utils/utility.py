@@ -191,7 +191,7 @@ def check_install(module_name, install_name):
                 stdout=subprocess.DEVNULL,
             )
             print(f"The {module_name} module is now installed")
-        except subprocess.CalledProcessError as exc:
+        except subprocess.CalledProcessError:
             raise Exception(f"Install {module_name} failed, please install manually")
     else:
         print(f"{module_name} has been installed.")

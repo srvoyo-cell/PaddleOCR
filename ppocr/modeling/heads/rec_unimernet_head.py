@@ -18,8 +18,6 @@ https://github.com/opendatalab/UniMERNet/blob/main/unimernet/models/unimernet/co
 
 import copy
 import math
-import re
-import numpy as np
 import inspect
 import warnings
 from collections import OrderedDict

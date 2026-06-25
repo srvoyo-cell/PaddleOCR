@@ -35,9 +35,8 @@ from qtpy.QtWidgets import (
     QMessageBox,
     QLabel,
     QFileDialog,
-    QCheckBox,
 )
-from qtpy.QtCore import Signal, QThread, QObject
+from qtpy.QtCore import Signal, QThread
 from qtpy.QtGui import QImage, QPixmap, QIcon
 
 file = os.path.dirname(os.path.abspath(__file__))
@@ -46,7 +45,7 @@ sys.path.append(file)
 sys.path.insert(0, root)
 
 from ppstructure.predict_system import StructureSystem, save_structure_res
-from ppstructure.utility import parse_args, draw_structure_result
+from ppstructure.utility import parse_args
 from ppocr.utils.network import download_with_progressbar
 from ppstructure.recovery.recovery_to_doc import sorted_layout_boxes, convert_info_docx
 

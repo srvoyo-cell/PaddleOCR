@@ -13,7 +13,6 @@
 # limitations under the License.
 
 import paddle.distributed as dist
-import math
 import paddle
 import paddle.nn as nn
 

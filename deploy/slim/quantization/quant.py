@@ -24,7 +24,6 @@ sys.path.append(__dir__)
 sys.path.append(os.path.abspath(os.path.join(__dir__, "..", "..", "..")))
 sys.path.append(os.path.abspath(os.path.join(__dir__, "..", "..", "..", "tools")))
 
-import yaml
 import paddle
 import paddle.distributed as dist
 

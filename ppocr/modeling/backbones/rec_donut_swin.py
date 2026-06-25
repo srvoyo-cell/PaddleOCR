@@ -20,7 +20,6 @@ https://github.com/huggingface/transformers/blob/main/src/transformers/models/do
 import collections.abc
 from collections import OrderedDict
 import math
-import numpy as np
 from dataclasses import dataclass
 from typing import Optional, Tuple, Union
 

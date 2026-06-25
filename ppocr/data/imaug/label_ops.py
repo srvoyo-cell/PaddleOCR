@@ -21,10 +21,8 @@ import os
 from enum import Enum
 import copy
 import numpy as np
-import string
 from shapely.geometry import LineString, Point, Polygon
 import json
-import copy
 import random
 from random import sample
 from collections import defaultdict

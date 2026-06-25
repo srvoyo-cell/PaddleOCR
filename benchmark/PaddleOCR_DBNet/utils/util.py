@@ -5,7 +5,6 @@ import json
 import pathlib
 import time
 import os
-import glob
 import cv2
 import yaml
 from collections.abc import Mapping

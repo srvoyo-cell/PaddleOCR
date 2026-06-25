@@ -16,23 +16,14 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import math
-import paddle
-from paddle import ParamAttr
 import paddle.nn as nn
-import paddle.nn.functional as F
 
 from ppocr.modeling.necks.rnn import (
     Im2Seq,
-    EncoderWithRNN,
-    EncoderWithFC,
     SequenceEncoder,
-    EncoderWithSVTR,
     trunc_normal_,
     zeros_,
 )
-from .rec_ctc_head import CTCHead
-from .rec_sar_head import SARHead
 from .rec_nrtr_head import Transformer
 
 

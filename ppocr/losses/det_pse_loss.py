@@ -19,7 +19,6 @@ https://github.com/whai362/PSENet/blob/python3/models/head/psenet_head.py
 import paddle
 from paddle import nn
 from paddle.nn import functional as F
-import numpy as np
 from ppocr.utils.iou import iou
 
 

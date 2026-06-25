@@ -18,17 +18,15 @@ https://github.com/PaddlePaddle/PaddleClas/blob/2f36cab604e439b59d1a854df34ece3b
 
 from __future__ import absolute_import, division, print_function
 
-import math
 import numpy as np
 import paddle
 import paddle.nn as nn
 import paddle.nn.functional as F
 from paddle import ParamAttr
-from paddle.nn import Conv2D, BatchNorm, Linear, BatchNorm2D, MaxPool2D, AvgPool2D
-from paddle.nn.initializer import Uniform
+from paddle.nn import Conv2D, BatchNorm2D
 from paddle.regularizer import L2Decay
 
-from typing import Tuple, List, Dict, Union, Callable, Any
+from typing import List, Dict, Union, Callable
 from ppocr.modeling.backbones.rec_donut_swin import DonutSwinModelOutput
 
 
@@ -499,7 +497,7 @@ class TheseusLayer(nn.Layer):
         # init the output of net
         if return_patterns or return_stages:
             if return_patterns and return_stages:
-                msg = f"The 'return_patterns' would be ignored when 'return_stages' is set."
+                msg = "The 'return_patterns' would be ignored when 'return_stages' is set."
 
                 return_stages = None
 
@@ -882,13 +880,9 @@ class AdaptiveAvgPool2D(nn.AdaptiveAvgPool2D):
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import paddle
 import paddle.nn as nn
-import paddle.nn.functional as F
 from paddle.nn.initializer import KaimingNormal, Constant
-from paddle.nn import Conv2D, BatchNorm2D, ReLU, AdaptiveAvgPool2D, MaxPool2D
-from paddle.regularizer import L2Decay
-from paddle import ParamAttr
+from paddle.nn import ReLU, AdaptiveAvgPool2D
 
 MODEL_URLS = {
     "PPHGNetV2_B0": "https://paddle-imagenet-models-name.bj.bcebos.com/dygraph/legendary_models/PPHGNetV2_B0_ssld_pretrained.pdparams",

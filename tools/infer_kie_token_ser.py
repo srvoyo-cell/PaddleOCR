@@ -35,7 +35,7 @@ from ppocr.modeling.architectures import build_model
 from ppocr.postprocess import build_post_process
 from ppocr.utils.save_load import load_model
 from ppocr.utils.visual import draw_ser_results
-from ppocr.utils.utility import get_image_file_list, load_vqa_bio_label_maps
+from ppocr.utils.utility import get_image_file_list
 import tools.program as program
 
 

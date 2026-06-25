@@ -19,7 +19,6 @@ from __future__ import print_function
 import paddle
 from paddle import nn
 import numpy as np
-import cv2
 
 __all__ = ["Kie_backbone"]
 

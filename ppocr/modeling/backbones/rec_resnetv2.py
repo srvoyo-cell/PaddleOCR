@@ -29,9 +29,9 @@ from collections import OrderedDict  # pylint: disable=g-importing-member
 import paddle
 import paddle.nn as nn
 import paddle.nn.functional as F
-from paddle.nn.initializer import TruncatedNormal, Constant, Normal, KaimingUniform
+from paddle.nn.initializer import Constant, Normal, KaimingUniform
 from functools import partial
-from typing import Union, Callable, Type, List, Tuple
+from typing import Callable, Tuple
 
 IMAGENET_INCEPTION_MEAN = (0.5, 0.5, 0.5)
 IMAGENET_INCEPTION_STD = (0.5, 0.5, 0.5)

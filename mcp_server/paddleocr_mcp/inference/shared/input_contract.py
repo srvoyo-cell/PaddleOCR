@@ -20,7 +20,7 @@ import tempfile
 from contextlib import contextmanager
 from enum import Enum
 from pathlib import Path
-from typing import Generator, Optional
+from typing import Generator
 
 from ...utils import (
     decode_base64_payload,

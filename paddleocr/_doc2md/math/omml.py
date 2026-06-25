@@ -21,7 +21,6 @@ via MinerU 3.0.0 (MIT License)
 import logging
 import re
 
-import lxml.etree as ET
 
 from .latex_dict import (
     ALN,

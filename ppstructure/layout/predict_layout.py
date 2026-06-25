@@ -30,7 +30,6 @@ from ppocr.postprocess import build_post_process
 from ppocr.utils.logging import get_logger
 from ppocr.utils.utility import get_image_file_list, check_and_read
 from ppstructure.utility import parse_args
-from picodet_postprocess import PicoDetPostProcess
 
 logger = get_logger()
 

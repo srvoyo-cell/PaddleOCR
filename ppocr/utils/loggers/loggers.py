@@ -1,4 +1,3 @@
-from .wandb_logger import WandbLogger
 
 
 class Loggers(object):

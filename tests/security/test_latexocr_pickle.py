@@ -13,13 +13,11 @@
 # limitations under the License.
 
 import importlib.util
-import io
 import pickle
 import sys
 import types
 from pathlib import Path
 
-import numpy as np
 import pytest
 
 

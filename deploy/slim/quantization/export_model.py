@@ -20,10 +20,7 @@ sys.path.append(__dir__)
 sys.path.insert(0, os.path.abspath(os.path.join(__dir__, "..", "..", "..")))
 sys.path.insert(0, os.path.abspath(os.path.join(__dir__, "..", "..", "..", "tools")))
 
-import argparse
 
-import paddle
-from paddle.jit import to_static
 
 from ppocr.modeling.architectures import build_model
 from ppocr.postprocess import build_post_process

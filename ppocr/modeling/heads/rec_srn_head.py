@@ -16,15 +16,11 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import math
 import paddle
-from paddle import nn, ParamAttr
+from paddle import nn
 from paddle.nn import functional as F
-import numpy as np
 from .self_attention import WrapEncoderForFeature
 from .self_attention import WrapEncoder
-from paddle.static import Program
-from ppocr.modeling.backbones.rec_resnet_fpn import ResNetFPN
 
 from collections import OrderedDict
 

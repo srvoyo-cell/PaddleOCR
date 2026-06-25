@@ -21,12 +21,9 @@ from __future__ import print_function
 
 import math
 import paddle
-from paddle import nn, ParamAttr
+from paddle import nn
 from paddle.nn import functional as F
 import numpy as np
-from .self_attention import WrapEncoderForFeature
-from .self_attention import WrapEncoder
-from collections import OrderedDict
 from typing import Optional
 import copy
 from itertools import permutations

@@ -20,8 +20,6 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import warnings
-import cv2
 import numpy as np
 import paddle
 import paddle.nn as nn

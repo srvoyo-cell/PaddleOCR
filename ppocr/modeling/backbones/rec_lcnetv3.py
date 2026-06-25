@@ -25,11 +25,8 @@ from paddle.nn import (
     AdaptiveAvgPool2D,
     BatchNorm2D,
     Conv2D,
-    Dropout,
     Hardsigmoid,
     Hardswish,
-    Identity,
-    Linear,
     ReLU,
 )
 from paddle.regularizer import L2Decay

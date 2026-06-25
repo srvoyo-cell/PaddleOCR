@@ -31,13 +31,12 @@ import json
 import paddle
 import paddle.distributed as dist
 
-from ppocr.data import create_operators, transform
 from ppocr.modeling.architectures import build_model
 from ppocr.postprocess import build_post_process
 from ppocr.utils.save_load import load_model
 from ppocr.utils.visual import draw_re_results
 from ppocr.utils.logging import get_logger
-from ppocr.utils.utility import get_image_file_list, load_vqa_bio_label_maps, print_dict
+from ppocr.utils.utility import get_image_file_list, print_dict
 from tools.program import ArgsParser, load_config, merge_config
 from tools.infer_kie_token_ser import SerPredictor
 

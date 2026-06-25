@@ -14,7 +14,7 @@ def string_to_int(s):
 
 def get_Tables(doc):
     try_import("lxml")
-    from lxml import etree, html
+    from lxml import html
 
     tree = html.fromstring(doc)
     comments = tree.xpath("//comment()")

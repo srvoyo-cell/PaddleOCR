@@ -26,8 +26,6 @@ sys.path.append(os.path.join(__dir__, ".."))
 import numpy as np
 from .locality_aware_nms import nms_locality
 import paddle
-import cv2
-import time
 
 
 class SASTPostProcess(object):

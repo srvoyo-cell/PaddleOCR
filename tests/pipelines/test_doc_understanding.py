@@ -20,7 +20,6 @@ from paddleocr import DocUnderstanding
 from ..testing_utils import (
     TEST_DATA_DIR,
     check_simple_inference_result,
-    check_wrapper_simple_inference_param_forwarding,
 )
 
 

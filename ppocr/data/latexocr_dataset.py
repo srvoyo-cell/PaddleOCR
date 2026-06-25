@@ -18,10 +18,7 @@ https://github.com/lukas-blecher/LaTeX-OCR/blob/main/pix2tex/dataset/dataset.py
 """
 
 import numpy as np
-import cv2
-import math
 import os
-import json
 import pickle
 import random
 import traceback

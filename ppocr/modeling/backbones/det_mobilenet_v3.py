@@ -19,7 +19,6 @@ from __future__ import print_function
 import paddle
 from paddle import nn
 import paddle.nn.functional as F
-from paddle import ParamAttr
 from ppocr.modeling.backbones.rec_hgnet import MeanPool2D
 
 __all__ = ["MobileNetV3"]

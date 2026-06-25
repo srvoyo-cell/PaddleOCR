@@ -13,7 +13,6 @@
 # limitations under the License.
 
 import argparse
-import sys
 import warnings
 
 from typing_extensions import deprecated as deprecated

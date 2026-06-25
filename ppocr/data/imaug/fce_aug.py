@@ -16,7 +16,6 @@ This code is refer from:
 https://github.com/open-mmlab/mmocr/blob/main/mmocr/datasets/pipelines/transforms.py
 """
 import numpy as np
-from PIL import Image, ImageDraw
 import cv2
 from shapely.geometry import Polygon
 import math

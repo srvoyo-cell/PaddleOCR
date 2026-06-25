@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import math
-from collections import namedtuple
 import numpy as np
 from shapely.geometry import Polygon
 

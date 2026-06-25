@@ -12,18 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import math
 from functools import partial
 from typing import Optional, Tuple, Type
 
-import numpy as np
 import paddle
 import paddle.nn as nn
 import paddle.nn.functional as F
 from paddle.nn.initializer import (
     Constant,
     KaimingUniform,
-    Normal,
     TruncatedNormal,
     XavierUniform,
 )

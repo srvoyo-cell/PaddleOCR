@@ -16,11 +16,9 @@ This code is refer from:
 https://github.com/FangShancheng/ABINet/tree/main/modules
 """
 
-import math
 import paddle
 from paddle import nn
 import paddle.nn.functional as F
-from paddle.nn import LayerList
 from ppocr.modeling.heads.rec_nrtr_head import TransformerBlock, PositionalEncoding
 
 

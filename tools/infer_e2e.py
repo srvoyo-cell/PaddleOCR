@@ -38,7 +38,6 @@ from ppocr.utils.save_load import load_model
 from ppocr.utils.utility import get_image_file_list
 import tools.program as program
 from PIL import Image, ImageDraw, ImageFont
-import math
 
 
 def draw_e2e_res_for_chinese(

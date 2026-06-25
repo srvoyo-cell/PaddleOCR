@@ -16,7 +16,6 @@ import os
 import random
 from paddle.io import Dataset
 import json
-from copy import deepcopy
 
 from .imaug import transform, create_operators
 

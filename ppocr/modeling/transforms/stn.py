@@ -21,7 +21,7 @@ from __future__ import print_function
 
 import math
 import paddle
-from paddle import nn, ParamAttr
+from paddle import nn
 from paddle.nn import functional as F
 import numpy as np
 

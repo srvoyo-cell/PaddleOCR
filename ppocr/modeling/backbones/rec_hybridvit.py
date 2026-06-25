@@ -33,7 +33,6 @@ from ppocr.modeling.backbones.rec_resnetv2 import (
     ResNetV2,
     StdConv2dSame,
     DropPath,
-    get_padding,
 )
 from paddle.nn.initializer import (
     TruncatedNormal,

@@ -25,7 +25,6 @@ from .basic_loss import DMLLoss, KLDivLoss, DKDLoss
 from .basic_loss import DistanceLoss
 from .basic_loss import LossFromOutput
 from .det_db_loss import DBLoss
-from .det_basic_loss import BalanceLoss, MaskL1Loss, DiceLoss
 from .vqa_token_layoutlm_loss import VQASerTokenLayoutLMLoss
 
 

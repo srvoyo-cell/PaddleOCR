@@ -18,8 +18,6 @@ https://github.com/ayumiymk/aster.pytorch/blob/master/lib/models/resnet_aster.py
 import paddle
 import paddle.nn as nn
 
-import sys
-import math
 
 
 def conv3x3(in_planes, out_planes, stride=1):

@@ -16,7 +16,6 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import math
 import paddle
 from paddle import nn, ParamAttr
 from paddle.nn import functional as F

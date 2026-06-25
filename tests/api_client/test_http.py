@@ -24,12 +24,9 @@ from paddleocr._api_client.errors import (
     APIError,
     AuthError,
     InvalidRequestError,
-    NetworkError,
     RateLimitError,
-    RequestTimeoutError,
     ServiceUnavailableError,
 )
-from paddleocr._api_client.models import Model
 
 
 class _MockHandler(BaseHTTPRequestHandler):

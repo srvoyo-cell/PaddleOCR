@@ -15,7 +15,6 @@
 import paddle
 import paddle.nn as nn
 import paddle.nn.functional as F
-import numpy as np
 
 
 class UniMERNetLoss(nn.Layer):

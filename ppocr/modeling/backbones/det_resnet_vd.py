@@ -23,7 +23,7 @@ import paddle.nn.functional as F
 
 from paddle.vision.ops import DeformConv2D
 from paddle.regularizer import L2Decay
-from paddle.nn.initializer import Normal, Constant, XavierUniform
+from paddle.nn.initializer import Constant
 
 __all__ = ["ResNet_vd", "ConvBNLayer", "DeformableConvV2"]
 

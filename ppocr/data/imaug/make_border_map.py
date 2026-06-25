@@ -27,7 +27,6 @@ import cv2
 np.seterr(divide="ignore", invalid="ignore")
 import pyclipper
 from shapely.geometry import Polygon
-import sys
 import warnings
 
 warnings.simplefilter("ignore")

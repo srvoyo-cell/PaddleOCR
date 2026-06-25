@@ -13,10 +13,7 @@
 # limitations under the License.
 
 import os
-import cv2
-import glob
 import argparse
-from os.path import join
 from tqdm import tqdm
 
 

@@ -17,13 +17,10 @@ from __future__ import division
 from __future__ import print_function
 
 import math
-import paddle
 from paddle import nn
 import paddle.nn.functional as F
-from paddle import ParamAttr
 
-import math
-from paddle.nn.initializer import TruncatedNormal, Constant, Normal
+from paddle.nn.initializer import Constant, Normal
 
 ones_ = Constant(value=1.0)
 zeros_ = Constant(value=0.0)

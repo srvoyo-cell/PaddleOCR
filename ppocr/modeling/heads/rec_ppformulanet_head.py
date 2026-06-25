@@ -13,18 +13,10 @@
 # limitations under the License.
 
 import math
-import re
-import numpy as np
-import inspect
 import paddle
 import paddle.nn as nn
-import paddle.nn.functional as F
-from paddle.nn import CrossEntropyLoss
-from paddle import Tensor
-from collections import OrderedDict
-from typing import Optional, Tuple, Union, List, Dict, Any
-from dataclasses import dataclass, fields, is_dataclass
-from ppocr.modeling.backbones.rec_donut_swin import DonutSwinModelOutput
+from typing import Dict, Any
+from dataclasses import dataclass
 from ppocr.modeling.heads.rec_unimernet_head import (
     MBartForCausalLM,
     MBartDecoder,
@@ -32,11 +24,6 @@ from ppocr.modeling.heads.rec_unimernet_head import (
     ModelOutput,
     BaseModelOutputWithPastAndCrossAttentions,
     Seq2SeqLMOutput,
-    zeros_,
-    ones_,
-    kaiming_normal_,
-    trunc_normal_,
-    xavier_uniform_,
     CausalLMOutputWithCrossAttentions,
     LogitsProcessorList,
     ForcedEOSTokenLogitsProcessor,

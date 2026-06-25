@@ -1,7 +1,6 @@
 import paddle
 import numpy as np
 import os
-import paddle.nn as nn
 import paddle.distributed as dist
 
 dist.get_world_size()
@@ -11,7 +10,7 @@ from loss import build_loss, LossDistill, DMLLoss, KLJSLoss
 from optimizer import create_optimizer
 from data_loader import build_dataloader
 from metric import create_metric
-from mv3 import MobileNetV3_large_x0_5, distillmv3_large_x0_5, build_model
+from mv3 import build_model
 from config import preprocess
 import time
 

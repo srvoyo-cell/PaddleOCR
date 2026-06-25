@@ -21,10 +21,8 @@ sys.path.append(str(__dir__))
 sys.path.append(str(__dir__.parent.parent))
 
 import cv2
-import paddle
 from paddle import inference
 import numpy as np
-from PIL import Image
 
 from paddle.vision import transforms
 from tools.predict import resize_image

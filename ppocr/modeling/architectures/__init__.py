@@ -26,7 +26,7 @@ __all__ = ["build_model", "apply_to_static"]
 
 def build_model(config):
     config = copy.deepcopy(config)
-    if not "name" in config:
+    if "name" not in config:
         arch = BaseModel(config)
     else:
         name = config.pop("name")

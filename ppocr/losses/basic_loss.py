@@ -16,9 +16,6 @@ import paddle
 import paddle.nn as nn
 import paddle.nn.functional as F
 
-from paddle.nn import L1Loss
-from paddle.nn import MSELoss as L2Loss
-from paddle.nn import SmoothL1Loss
 
 
 class CELoss(nn.Layer):

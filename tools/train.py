@@ -13,9 +13,7 @@
 # limitations under the License.
 
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
+from __future__ import absolute_import, division, print_function
 
 import os
 import sys
@@ -24,21 +22,19 @@ __dir__ = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(__dir__)
 sys.path.insert(0, os.path.abspath(os.path.join(__dir__, "..")))
 
-import yaml
 import paddle
 import paddle.distributed as dist
 
+import tools.naive_sync_bn as naive_sync_bn
+import tools.program as program
 from ppocr.data import build_dataloader, set_signal_handlers
-from ppocr.modeling.architectures import build_model
 from ppocr.losses import build_loss
+from ppocr.metrics import build_metric
+from ppocr.modeling.architectures import apply_to_static, build_model
 from ppocr.optimizer import build_optimizer
 from ppocr.postprocess import build_post_process
-from ppocr.metrics import build_metric
 from ppocr.utils.save_load import load_model
 from ppocr.utils.utility import set_seed
-from ppocr.modeling.architectures import apply_to_static
-import tools.program as program
-import tools.naive_sync_bn as naive_sync_bn
 
 dist.get_world_size()
 
@@ -102,6 +98,9 @@ def main(config, device, logger, vdl_writer):
                         ] = (char_num + 1)
                         out_channels_list["SARLabelDecode"] = char_num + 2
                     elif any(
+                        ] = char_num + 1
+                        out_channels_list["SARLabelDecode"] = char_num + 2
+                    elif any(
                         "DistillationNRTRLoss" in d
                         for d in config["Loss"]["loss_config_list"]
                     ):
@@ -111,12 +110,9 @@ def main(config, device, logger, vdl_writer):
                         "out_channels_list"
                     ] = out_channels_list
                 else:
-                    config["Architecture"]["Models"][key]["Head"][
-                        "out_channels"
-                    ] = char_num
-        elif config["Architecture"]["Head"]["name"] == "MultiHead":  # for multi head
-            if config["PostProcess"]["name"] == "SARLabelDecode":
-                char_num = char_num - 2
+                    config["Architecture"]["Models"][key]["Head"]["out_channels"] = (
+                        char_num
+                    )
             if config["PostProcess"]["name"] == "NRTRLabelDecode":
                 char_num = char_num - 3
             out_channels_list = {}

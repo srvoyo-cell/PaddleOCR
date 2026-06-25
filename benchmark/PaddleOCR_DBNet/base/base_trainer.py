@@ -4,7 +4,6 @@
 
 import os
 import pathlib
-import shutil
 from pprint import pformat
 
 import anyconfig

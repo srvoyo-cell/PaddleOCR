@@ -3,7 +3,6 @@ import paddle.distributed as dist
 
 import numpy as np
 import random
-import math
 
 
 class MultiScaleSampler(Sampler):

@@ -377,7 +377,7 @@ def main() -> None:
     if not args.no_verify:
         _verify_onnx_file(out_onnx)
 
-    extra = f" and copied inference.yml" if not in_place else ""
+    extra = " and copied inference.yml" if not in_place else ""
     print(f"Wrote {out_onnx}{extra}")
 
 

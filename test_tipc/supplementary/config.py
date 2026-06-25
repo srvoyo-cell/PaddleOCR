@@ -1,13 +1,5 @@
-import numpy as np
 import os
-import sys
-import platform
 import yaml
-import time
-import shutil
-import paddle
-import paddle.distributed as dist
-from tqdm import tqdm
 from argparse import ArgumentParser, RawDescriptionHelpFormatter
 from utils import get_logger, print_dict
 

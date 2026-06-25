@@ -20,7 +20,6 @@ import cv2
 import numpy as np
 from numpy.fft import fft
 from numpy.linalg import norm
-import sys
 
 
 def vector_slope(vec):

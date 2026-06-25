@@ -1,5 +1,4 @@
 import sys
-import math
 from paddle.optimizer.lr import LinearWarmup
 from paddle.optimizer.lr import PiecewiseDecay
 from paddle.optimizer.lr import CosineAnnealingDecay

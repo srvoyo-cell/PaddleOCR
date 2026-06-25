@@ -17,7 +17,6 @@ This code is refer from:
 https://github.com/lukas-blecher/LaTeX-OCR/blob/main/pix2tex/models/transformer.py
 """
 
-import math
 import paddle
 from paddle import nn, einsum
 import paddle.nn.functional as F
@@ -26,11 +25,8 @@ from inspect import isfunction
 from collections import namedtuple
 
 from paddle.nn.initializer import (
-    TruncatedNormal,
     Constant,
     Normal,
-    KaimingUniform,
-    XavierUniform,
 )
 
 zeros_ = Constant(value=0.0)

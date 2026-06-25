@@ -18,9 +18,6 @@ https://github.com/songdejia/EAST/blob/master/data_utils.py
 import math
 import cv2
 import numpy as np
-import json
-import sys
-import os
 
 __all__ = ["EASTProcessTrain"]
 

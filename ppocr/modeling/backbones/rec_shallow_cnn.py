@@ -20,13 +20,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-import math
-import numpy as np
-import paddle
 from paddle import ParamAttr
 import paddle.nn as nn
-import paddle.nn.functional as F
-from paddle.nn import MaxPool2D
 from paddle.nn.initializer import KaimingNormal, Uniform, Constant
 
 

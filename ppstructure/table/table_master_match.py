@@ -18,7 +18,6 @@ https://github.com/JiaquanYe/TableMASTER-mmocr/blob/master/table_recognition/mat
 
 import os
 import re
-import cv2
 import glob
 import copy
 import math

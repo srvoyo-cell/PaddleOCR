@@ -16,18 +16,12 @@ import argparse
 import time
 import os
 import sys
-import cv2
 import numpy as np
 import paddle
 import logging
-import numpy as np
-import argparse
-from tqdm import tqdm
-import paddle
 from paddleslim.common import load_config as load_slim_config
 from paddleslim.common import get_logger
 
-import sys
 
 sys.path.append("../../../")
 from ppocr.data import build_dataloader
